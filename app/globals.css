@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212;
+    --foreground: #000000;
   }
 }
 
@@ -18,4 +18,36 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  /* hoverlink.tsx */
+  .hoverlink {
+    @apply text-blue-500 font-mono ml-5; /* Default color */
+  }
+
+  .hoverlink:hover {
+    @apply text-red-500; /* Hover color */
+  }
+
+  .navContainer {
+    @apply flex flex-col;
+  }
+
+  .nav {
+    @apply mt-5 mr-[25%] float-right;
+  }
+
+  /* searchbox.tsx */
+  .searchWrapper {
+    @apply mt-[10%] w-fit mx-auto;
+  }
+
+  .searchInput {
+    @apply font-mono p-4 rounded-tl rounded-bl w-96;
+  }
+
+  .searchButton {
+    @apply font-mono p-4 border rounded-tr rounded-br text-center text-white;
+  }
 }
