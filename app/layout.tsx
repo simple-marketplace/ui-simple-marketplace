@@ -15,9 +15,8 @@ const geistMono = Geist_Mono({
 
 let pages = [
   { name: "Home", link: "/" },
-  { name: "Concepts", link: "/concepts" },
-  { name: "Glossary", link: "/glossary" },
-  // { name: "Behavioral", link: "/behavioral" },
+  { name: "My Account", link: "/my_account" },
+  { name: "Sign Up", link: "/sign_up" },
 ];
 
 export const metadata: Metadata = {

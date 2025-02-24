@@ -27,7 +27,7 @@ body {
   }
 
   .hoverlink:hover {
-    @apply text-red-500; /* Hover color */
+    @apply underline font-bold; /* Hover color */
   }
 
   .navContainer {
@@ -49,5 +49,39 @@ body {
 
   .searchButton {
     @apply font-mono p-4 border rounded-tr rounded-br text-center text-white;
+  }
+
+  .signup-form {
+    @apply mt-[8%] w-fit mx-auto block;
+  }
+
+  .signup-header {
+    @apply font-bold text-3xl mb-8 text-center;
+  }
+
+  .form-group {
+    @apply mb-5;
+  }
+
+  .signup-input {
+    @apply w-full;
+  }
+
+  .signup-label {
+    @apply text-cyan-900 ml-5 font-bold  text-right;
+  }
+
+  .signup-error-msg {
+    @apply absolute;
+  }
+
+  .signup-submit-button {
+    @apply border rounded-md pt-3 pb-3 pl-2 pr-2  font-bold w-full;
+  }
+
+  h1,
+  button,
+  p {
+    @apply text-cyan-900;
   }
 }
